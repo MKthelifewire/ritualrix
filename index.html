@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RITUALRIX — 두근거림 없는 무카페인 클린 에너지 드링크</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=DM+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&family=Cormorant:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --pink: #f2a7be;
+    --pink-light: #FFE5E8;
+    --pink-mid: #f7c3d0;
+    --blue: #6BC4E8;
+    --blue-light: #D6F2FF;
+    --blue-mid: #b3dff5;
+    --cream: #f9f6f1;
+    --warm-white: #fefefe;
+    --text-dark: #1a1a1a;
+    --text-mid: #3d3d3d;
+    --text-light: #7a7a7a;
+    --border: #e8e4df;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: var(--text-dark);
+    background: #f5f2ed;
+    overflow-x: hidden;
+  }
+
+  .page-bg {
+    background: #ffffff;
+    box-shadow: 0 0 60px rgba(0,0,0,0.05);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* ──── HERO HEADER ──── */
+  .hero-header {
+    background: #f7f3ee;
+    text-align: center;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #e2ddd7;
+  }
+
+  .hero-eyebrow-bar {
+    background: #1c1c1a;
+    color: #f7f3ee;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  .hero-inner {
+    padding: 64px 24px 56px;
+    position: relative;
+  }
+
+  .hero-pill {
+    display: inline-block;
+    background: #e8f4f0;
+    color: #3a7a6a;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    padding: 6px 18px;
+    border-radius: 100px;
+    margin-bottom: 28px;
+    border: 1px solid #c4dfd8;
+  }
+
+  .logo-wordmark {
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(36px, 9vw, 80px);
+    font-weight: 200;
+    letter-spacing: 0.22em;
+    color: #1c1c1a;
+    line-height: 1;
+    margin-bottom: 14px;
+  }
+
+  .logo-tagline {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 0.4em;
+    color: #8a8278;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  .hero-divider {
+    width: 40px;
+    height: 1px;
+    background: #c8c0b8;
+    margin: 28px auto;
+  }
+
+  .hero-subline {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: clamp(14px, 2.5vw, 17px);
+    font-weight: 400;
+    color: #4a4540;
+    line-height: 1.8;
+    max-width: 460px;
+    margin: 0 auto 32px;
+    letter-spacing: -0.01em;
+  }
+
+  .hero-badges {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+  }
+
+  .hero-badge {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #6a6460;
+    padding: 5px 14px;
+    border: 1px solid #d4cec8;
+    border-radius: 100px;
+    background: rgba(255,255,255,0.7);
+  }
+
+  .hero-cta-link {
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .hero-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #F9E000;
+    color: #1c1c1a;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 16px 32px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background 0.25s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 12px rgba(249,224,0,0.35);
+  }
+
+  .hero-cta-btn:hover {
+    background: #ffe600;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(249,224,0,0.45);
+  }
+
+  .hero-cta-btn .cta-icon {
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  .hero-scroll-hint {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    color: #b0a8a0;
+    text-transform: uppercase;
+    margin-top: 40px;
+  }
+
+  /* ──── MAIN CONTENT ──── */
+  .page-wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  /* ──── TITLE SECTION ──── */
+  .title-section {
+    padding: 56px 0 40px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .brand-icon {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 28px;
+    opacity: 0.7;
+  }
+
+  .main-title {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: clamp(22px, 4.5vw, 34px);
+    font-weight: 700;
+    line-height: 1.45;
+    color: #1c1c1a;
+    margin-bottom: 22px;
+    letter-spacing: -0.02em;
+  }
+
+  .subtitle-block {
+    margin-bottom: 32px;
+    padding: 24px 0;
+    border-top: 1px solid #ede8e2;
+    border-bottom: 1px solid #ede8e2;
+  }
+
+  .subtitle-block p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #6a6460;
+    line-height: 1.85;
+    letter-spacing: -0.01em;
+    margin-bottom: 4px;
+  }
+
+  .subtitle-italic {
+    font-family: 'Cormorant', 'DM Sans', serif;
+    font-style: italic;
+    color: #3a6858;
+    font-size: 17px;
+    font-weight: 500;
+    display: block;
+    margin-top: 10px;
+    letter-spacing: 0.04em;
+  }
+
+  .cta-banner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #f0ede8;
+    border: 1px solid #ddd8d2;
+    border-radius: 100px;
+    padding: 14px 22px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: #4a4540;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+  }
+
+  .cta-banner:hover { background: #e8e4de; transform: translateY(-1px); }
+
+  /* ──── PROBLEM SECTION ──── */
+  .section-divider {
+    height: 1px;
+    background: var(--border);
+    margin: 40px 0;
+  }
+
+  .highlight-box {
+    background: linear-gradient(135deg, #eaf4fb 0%, #f0f8fd 100%);
+    border-radius: 8px;
+    padding: 20px 22px;
+    margin-bottom: 28px;
+  }
+
+  .highlight-box p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.8;
+    color: var(--text-dark);
+  }
+
+  .body-text {
+    font-size: 14px;
+    line-height: 1.85;
+    color: var(--text-mid);
+    margin-bottom: 14px;
+  }
+
+  .emphasis-text {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 16px;
+    line-height: 1.7;
+  }
+
+  .ingredient-list {
+    list-style: none;
+    margin: 16px 0;
+  }
+
+  .ingredient-list li {
+    font-size: 14px;
+    line-height: 1.9;
+    color: var(--text-mid);
+    padding: 2px 0;
+  }
+
+  /* ──── SECTION HEADERS ──── */
+  .section-header-box {
+    background: linear-gradient(135deg, #eaf4fb 0%, #f0f8fd 100%);
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin-bottom: 32px;
+  }
+
+  .section-header-box h2 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #1c1c1a;
+    margin-bottom: 4px;
+    letter-spacing: -0.02em;
+  }
+
+  .section-header-box p {
+    font-size: 13px;
+    color: var(--text-mid);
+  }
+
+  /* ──── RECIPE SECTION ──── */
+  .section-title {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1c1c1a;
+    margin-bottom: 24px;
+    padding-top: 4px;
+    letter-spacing: -0.02em;
+  }
+
+  .recipe-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: 560px) {
+    .recipe-grid { grid-template-columns: 1fr; }
+  }
+
+  .recipe-card {
+    padding: 0;
+  }
+
+  .recipe-label {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .recipe-label.pink { color: #e05080; }
+  .recipe-label.blue { color: #3a8fcc; }
+
+  .recipe-card p {
+    font-size: 13px;
+    line-height: 1.75;
+    color: var(--text-mid);
+    margin-bottom: 12px;
+  }
+
+  .recipe-note {
+    font-size: 12px;
+    color: var(--text-light);
+    line-height: 1.8;
+  }
+
+  /* ──── PRODUCT IMAGE ──── */
+  .product-image-block {
+    margin: 32px 0;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+
+  .product-image-block img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* ──── 3 LAYER SECTION ──── */
+  .layer-block {
+    margin-bottom: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+
+  .layer-item {
+    position: relative;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .layer-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.75);
+  }
+
+  .layer-1-bg {
+    background: linear-gradient(135deg, #e0dbd5 0%, #c8c4be 100%);
+  }
+
+  .layer-2-bg {
+    background: linear-gradient(135deg, #5a8a4a 0%, #3d6a30 100%);
+  }
+
+  .layer-3-bg {
+    background: linear-gradient(135deg, #d4a87a 0%, #b8845a 100%);
+  }
+
+  .layer-content {
+    position: relative;
+    z-index: 2;
+    padding: 28px 28px;
+  }
+
+  .layer-1 .layer-content { margin-left: auto; text-align: right; }
+  .layer-2 .layer-content { text-align: left; }
+  .layer-3 .layer-content { margin-left: auto; text-align: right; }
+
+  .layer-num {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 6px;
+  }
+
+  .layer-ingredients {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+
+  .layer-desc {
+    color: rgba(255,255,255,0.88);
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  /* layer images */
+  .layer-image-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .layer-image-item {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .layer-image-item img {
+    width: 100%; height: 100%; object-fit: cover;
+  }
+
+  .layer-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+
+  .layer-text-box {
+    text-align: right;
+    color: #fff;
+  }
+
+  /* ──── CLEAN SECTION ──── */
+  .no-list {
+    list-style: disc;
+    padding-left: 22px;
+    margin: 12px 0 18px;
+  }
+
+  .no-list li {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 2;
+    color: var(--text-dark);
+  }
+
+  /* ──── WHEN TO DRINK ──── */
+  .when-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 20px 0;
+  }
+
+  @media (max-width: 480px) {
+    .when-grid { grid-template-columns: 1fr; }
+  }
+
+  .when-card {
+    padding: 0;
+  }
+
+  .when-label {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .when-label.pink { color: #e05080; }
+  .when-label.blue { color: #3a8fcc; }
+
+  .when-card ul {
+    list-style: none;
+    font-size: 13px;
+    color: var(--text-mid);
+    line-height: 2;
+  }
+
+  .when-card ul li::before { content: '✓ '; color: #5aaa6a; font-weight: 700; }
+
+  /* ──── PRODUCT MOCKUP IMAGES ──── */
+  .mockup-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 24px 0;
+  }
+
+  .mockup-img {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+
+  .mockup-img img { width: 100%; height: auto; display: block; }
+
+  /* ──── TARGET SECTION ──── */
+  .target-sub {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    color: var(--text-dark);
+  }
+
+  .target-list {
+    list-style: none;
+    margin-bottom: 32px;
+  }
+
+  .target-list li {
+    font-size: 14px;
+    line-height: 2;
+    color: var(--text-mid);
+  }
+
+  /* ──── TIMELINE ──── */
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 28px 0;
+  }
+
+  .timeline-item {
+    display: flex;
+    gap: 0;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    min-height: 200px;
+    background: #fff;
+  }
+
+  .timeline-bar {
+    width: 4px;
+    flex-shrink: 0;
+  }
+
+  .timeline-bar.pink { background: linear-gradient(180deg, #f2a7be, #e8c0cd); }
+  .timeline-bar.blue { background: linear-gradient(180deg, #6BC4E8, #a0d8f0); }
+
+  .timeline-text {
+    padding: 24px 22px;
+    flex: 1;
+  }
+
+  .timeline-time {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 200;
+    letter-spacing: -0.02em;
+    color: var(--text-dark);
+    margin-bottom: 4px;
+  }
+
+  .timeline-desc {
+    font-size: 13px;
+    color: var(--text-mid);
+    margin-bottom: 4px;
+    line-height: 1.6;
+  }
+
+  .timeline-tag {
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .timeline-tag.pink { color: #d94070; }
+  .timeline-tag.blue { color: #2a80c0; }
+
+  .timeline-photos {
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  @media (max-width: 500px) {
+    .timeline-photos { width: 110px; }
+    .timeline-time { font-size: 22px; }
+  }
+
+  .timeline-photos img {
+    width: 100%;
+    object-fit: cover;
+    flex: 1;
+  }
+
+  .timeline-photos .photo-overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 65%;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .timeline-photos .photo-overlay img {
+    display: block;
+    width: 100%;
+    height: auto;
+    flex: none;
+  }
+
+  /* ──── PRICING ──── */
+  .pricing-section {
+    padding: 36px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    margin: 40px 0;
+    text-align: center;
+  }
+
+  .pricing-badge {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .pricing-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .pricing-product-img {
+    width: 180px;
+    margin: 0 auto 16px;
+    display: block;
+  }
+
+  .pricing-amount {
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(36px, 10vw, 64px);
+    font-weight: 200;
+    color: rgba(100, 160, 200, 0.2);
+    letter-spacing: -0.02em;
+    margin-bottom: 4px;
+    line-height: 1;
+  }
+
+  .pricing-detail {
+    font-size: 16px;
+    font-weight: 700;
+    color: #3a8fcc;
+    margin-bottom: 6px;
+  }
+
+  .pricing-sub {
+    font-size: 13px;
+    color: var(--text-light);
+  }
+
+  .pricing-note {
+    font-size: 13px;
+    color: var(--text-mid);
+    margin-top: 16px;
+    line-height: 1.7;
+  }
+
+  .pricing-note a {
+    color: #3a8fcc;
+    text-decoration: underline;
+  }
+
+  /* ──── KAKAO CTA ──── */
+  .kakao-cta {
+    background: #f5f0e0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    cursor: pointer;
+    margin: 24px 0;
+    transition: background 0.2s;
+  }
+
+  .kakao-cta:hover { background: #eee8d2; }
+
+  .kakao-cta p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #5a4a20;
+  }
+
+  .kakao-final {
+    padding: 48px 0 60px;
+  }
+
+  .kakao-final h2 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .kakao-final .body-text { margin-bottom: 18px; }
+
+  .benefit-list {
+    list-style: none;
+    margin-bottom: 8px;
+  }
+
+  .benefit-list li {
+    font-size: 14px;
+    line-height: 2;
+    color: var(--text-mid);
+  }
+
+  /* ──── ANIMATIONS ──── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero-header .logo-wordmark,
+  .hero-header .logo-tagline {
+    animation: fadeUp 0.8s ease both;
+  }
+
+  .hero-header .logo-tagline { animation-delay: 0.15s; }
+
+  /* ──── FOOTER ──── */
+  footer {
+    background: #f4f3ef;
+    padding: 28px 28px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-light);
+    letter-spacing: 0.05em;
+  }
+</style>
+</head>
+<body>
+
+<!-- ──── HERO ──── -->
+<div class="page-bg">
+<div class="hero-header">
+  <div class="hero-eyebrow-bar">Caffeine-Free · Clean Formula · Functional Wellness</div>
+  <div class="hero-inner">
+    <div class="hero-pill">New Arrival 2026</div>
+    <div class="logo-wordmark">RITUALRIX</div>
+    <div class="logo-tagline">Clean Energy &amp; Focus Care</div>
+    <div class="hero-divider"></div>
+    <p class="hero-subline">크리스탈처럼 맑은 집중력을 위한<br>데일리 웰니스 워터믹스</p>
+    <div class="hero-badges">
+      <span class="hero-badge">No Caffeine</span>
+      <span class="hero-badge">No Sugar</span>
+      <span class="hero-badge">100% Natural</span>
+      <span class="hero-badge">3-Layer Formula</span>
+    </div>
+    <a href="https://pf.kakao.com/_hFbxhX" target="_blank" rel="noopener noreferrer" class="hero-cta-link">
+      <div class="hero-cta-btn">
+        <span class="cta-icon">💬</span>
+        <span>카카오톡 플친하고 얼리버드 혜택 받기</span>
+      </div>
+    </a>
+    <div class="hero-scroll-hint">scroll to explore ↓</div>
+  </div>
+</div>
+
+<!-- ──── MAIN CONTENT ──── -->
+<div class="page-wrap">
+
+  <!-- TITLE SECTION -->
+  <div class="title-section">
+    <!-- Minimal crystal mark -->
+    <svg class="brand-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M18 2 L34 18 L18 34 L2 18 Z" fill="none" stroke="#9abccc" stroke-width="1"/>
+      <path d="M18 8 L28 18 L18 28 L8 18 Z" fill="none" stroke="#9abccc" stroke-width="0.75" opacity="0.6"/>
+      <circle cx="18" cy="18" r="2.5" fill="#9abccc" opacity="0.8"/>
+    </svg>
+
+    <h1 class="main-title">두근거림 없는 무카페인<br>'클린 에너지 드링크'</h1>
+
+    <div class="subtitle-block">
+      <p>크리스탈처럼 맑은 집중력을 위한 웰니스 루틴</p>
+      <span class="subtitle-italic">RITUALRIX Clean Energy Drink</span>
+    </div>
+
+    <a href="https://pf.kakao.com/_hFbxhX" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">
+      <div class="cta-banner">
+        <span style="font-size:14px;">💬</span>
+        <span>(선착순) 카카오 플친하고 슈퍼 얼리버드 할인혜택 받기</span>
+        <span style="margin-left:auto; font-size:11px; opacity:0.5;">→</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- DIVIDER -->
+  <div class="section-divider"></div>
+
+  <!-- PROBLEM SECTION -->
+  <div class="highlight-box">
+    <p>매일 아침 피곤한 몸을 깨우기 위해<br><br>커피 없으면 시작 못 하는 하루.</p>
+  </div>
+
+  <p class="body-text">오늘도 고카페인 에너지 드링크나, 커피를 들이키고 있나요?</p>
+
+  <p class="body-text">
+    습관처럼 마시지만, 카페인은 에너지를 만들어준 않아요.<br>
+    카페인은 '피곤하다'는 뇌의 신호를 잠시 차단하는 방식으로 각성 상태를 만들어요.<br>
+    2~3시간 뒤 그 효과가 끝나면, 에너지는 더 떨어지고 커피를 또 찾게 됩니다. 카페인 스파이크!
+  </p>
+
+  <p class="emphasis-text">잠시 에너지를 끌어다 쓰고 떨어지면 더 피곤해지는 악순환이에요. 해결책이 아니죠.</p>
+
+  <p class="body-text">RITUALRIX는 카페인 없이, 세 가지 경로로 에너지를 만듭니다.</p>
+
+  <ul class="ingredient-list">
+    <li>🌿 <strong>브레인 영양</strong> — L-테아닌이 알파파 웨이브를 유도해 머리를 맑게 켭니다</li>
+    <li>⚡ <strong>세포 에너지</strong> — CoQ10·L-카르니틴이 미토콘드리아에서 세포단위로 에너지를 만들어요</li>
+    <li>🌱 <strong>활성화 비타민</strong> — 비타민 B·C군이 신경전달물질이 제대로 작동하게 돕습니다</li>
+  </ul>
+
+  <p class="body-text">카페인처럼 빌려 쓰는 게 아니라, 세포부터 차오르고 뇌를 맑게 활성화 시키는 방법으로요</p>
+
+  <div class="section-divider"></div>
+
+  <!-- CORE 3 SECTION -->
+  <div class="section-header-box">
+    <h2>몰입의 순간, 1잔에 가득 담긴 클린한 에너지</h2>
+    <p>RITUALRIX의 핵심 3가지</p>
+  </div>
+
+  <!-- 1. RECIPE SECTION -->
+  <h2 class="section-title">1. 컬러로 즐기는 클린 에너지 레시피</h2>
+
+  <div class="recipe-grid">
+    <div class="recipe-card">
+      <div class="recipe-label pink">💗 PINK RECIPE : 히비스커스 & 석류</div>
+      <p>부드럽게 채워지는 베리 밸런스로 새콤달콤한 베리 향이 퍼지며 기분까지 맑아지는 에너지 워터입니다.</p>
+      <div class="recipe-note">
+        FIRST : 산뜻하게 시작되는 석류 풍미<br>
+        MIDDLE : 은은하게 퍼지는 히비스커스의 깊은 향<br>
+        FINISH : 부드럽게 남는 베리의 여운
+      </div>
+    </div>
+    <div class="recipe-card">
+      <div class="recipe-label blue">💙 BLUE RECIPE : 블루 스피루리나 & 유자</div>
+      <p>맑게 깨우는 클린 시트러스로 상큼한 시트러스 향이 퍼지며 산뜻해지는 에너지워터입니다.</p>
+      <div class="recipe-note">
+        FIRST : 가볍게 퍼지는 유자의 상큼함<br>
+        MIDDLE : 맑고 깨끗하게 이어지는 시트러스 향<br>
+        FINISH : 부담 없이 떨어지는 산뜻한 여운
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCT DRINK IMAGE -->
+  <div class="product-image-block">
+    <img src="img1.png" alt="RITUALRIX Pink Focus &amp; Blue Focus Drink" style="width:100%;height:auto;display:block;border-radius:12px;">
+  </div>
+
+  <!-- 2. LAYER SECTION -->
+  <h2 class="section-title" style="margin-top:40px">2. 카페인 없이, 맑은 머리가 필요한 순간 강력한 클린 에너지 3 Layer</h2>
+
+  <p class="body-text">카페인 없이도 강력한 클린에너지 포뮬라로<br>흐트러지지 않고 또렷하게 이어지는 상태를 만들어 줍니다.</p>
+
+  <p class="body-text" style="color:#3a82c4; font-weight:500;">에너지를 만들고, 집중은 또렷해지고, 컨디션까지 안정되는 3 Layer 구조로<br>하루 내내 가볍고 또렷한 컨디션을 경험해 보세요!</p>
+
+  <!-- 3 Layer Cards -->
+  <div style="margin:24px 0;border-radius:12px;overflow:hidden;border:1px solid #e8e4df;">
+    <img src="img2.png" alt="RITUALRIX 3 Layer Formula" style="width:100%;height:auto;display:block;">
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- 3. CLEAN / NO SECTION -->
+  <h2 class="section-title">3. 합성이 아닌, 천연 원료 100%로 완성한 클린한 맛</h2>
+
+  <p class="body-text">한 잔 가득, 자연으로 채운 클린 레시피로 인공적인 맛이 아닌<br>100% 천연 재료만을 사용해 제조합니다.</p>
+
+  <ul class="no-list">
+    <li>No Sugar</li>
+    <li>No Caffeine</li>
+    <li>No 인공감미료</li>
+    <li>No 합성첨가물</li>
+  </ul>
+
+  <p class="body-text">액상과당, 색소, 보존료, 유화제 등 불필요한 성분은 모두 배제했죠.<br>부담없이, 매일 아침, 점심, 저녁 클린하게 채우는 에너지 루틴!</p>
+
+  <div class="section-divider"></div>
+
+  <!-- WHEN TO DRINK -->
+  <div class="section-header-box">
+    <h2>언제 마시면 좋을까요? 카페인 없이 언제나 마실수 있어요</h2>
+  </div>
+
+  <div class="when-grid">
+    <div class="when-card">
+      <div class="when-label pink">💗 Pink Focus 추천</div>
+      <ul>
+        <li>아침 기상 후, 모닝 리츄얼</li>
+        <li>운동 전</li>
+      </ul>
+    </div>
+    <div class="when-card">
+      <div class="when-label blue">💙 Blue Focus 추천</div>
+      <ul>
+        <li>오후 2–4시, 애프터눈 리츄얼</li>
+        <li>집중이 필요한 순간</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PRODUCT MOCKUP -->
+  <div class="mockup-grid">
+    <div class="mockup-img">
+      <img src="img3.png" alt="RITUALRIX Pink Focus Water" style="width:100%;height:auto;display:block;">
+    </div>
+    <div class="mockup-img">
+      <img src="img4.png" alt="RITUALRIX Blue Focus Water" style="width:100%;height:auto;display:block;">
+    </div>
+  </div>
+
+  <!-- FOR WHOM -->
+  <div class="section-header-box" style="margin-top:32px;">
+    <h2>이런 분들이라면, 꼭 한번 경험해 보세요!</h2>
+  </div>
+
+  <p class="target-sub">Pink Focus가 필요한 순간</p>
+  <ul class="target-list">
+    <li>🌞 아침인데 몸이 무겁고 커피도 지겨운 분</li>
+    <li>🏃 공복 운동 전 카페인 없이 몸을 깨우고 싶은 분</li>
+    <li>😴 카페인 → 불면 악순환을 끊고 싶은 분</li>
+    <li>🌸 생리 전후 극심한 피로·예민함이 있는 분</li>
+    <li>💼 30대 이후 쉽게 지치기 시작한 번아웃 직장 여성</li>
+  </ul>
+
+  <p class="target-sub">Blue Focus가 필요한 순간</p>
+  <ul class="target-list">
+    <li>📱 점심 후 이유 없이 멍해지고 집중이 안 되는 분</li>
+    <li>📚 카페인 없이 지속되는 집중력이 필요한 프리랜서·수험생</li>
+    <li>😤 긴장은 줄이면서 각성은 유지하고 싶은 분</li>
+    <li>🎨 창의적 작업·기획·글쓰기가 필요한 분</li>
+    <li>💻 장시간 모니터 앞에서 눈·뇌 피로가 심한 분</li>
+  </ul>
+
+  <div class="section-divider"></div>
+
+  <!-- TIMELINE -->
+  <div style="margin:24px 0;border-radius:12px;overflow:hidden;border:1px solid #e8e4df;">
+    <img src="img5.png" alt="RITUALRIX Daily Ritual Timeline" style="width:100%;height:auto;display:block;">
+  </div>
+
+  <!-- PRICING SECTION -->
+  <div class="pricing-section">
+    <div class="pricing-badge">⭐ 얼리버드 혜택 한정 가격 ⭐</div>
+
+    <!-- Product illustration -->
+    <div style="text-align:center;margin:0 auto 16px;">
+      <img src="img6.png" alt="RITUALRIX 얼리버드 가격" style="max-width:500px;width:100%;height:auto;display:block;margin:0 auto;">
+    </div>
+    <div class="pricing-amount">21,000won</div>
+    <div class="pricing-detail">10회분(1박스)이 21000원 (1회 당 2,000원)</div>
+
+    <p class="body-text" style="margin-top:16px;">🌞 커피 한 잔보다 가볍게, 클린 에너지 루틴을 시작해 보세요!</p>
+    <p class="pricing-note">
+      * 지금 보시는 가격은 얼리버드 한정 가격입니다.
+      <a href="#">런칭 후에는 39,000원으로 가격이 올라요!</a>
+    </p>
+  </div>
+
+  <!-- KAKAO CTA -->
+  <a href="https://pf.kakao.com/_hFbxhX" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">
+    <div class="kakao-cta">
+      <p>👊 3초 카톡 플친하고 역대급 혜택 알림받기(클릭!)</p>
+    </div>
+  </a>
+
+  <!-- KAKAO FINAL -->
+  <div class="kakao-final">
+    <h2>카톡 플친을 해두면<br>제일 먼저 얼리버드 할인을 알려 드릴게요 🙂 🎁</h2>
+
+    <p class="body-text">
+      리추얼릭스 클린에너지 워터믹스는 곧 출시 예정인 제품이예요.<br>
+      안심하고 맛있게 스트레스 관리를 할 수 있도록 마지막 디테일을 점검하고 있습니다.
+    </p>
+
+    <p class="body-text">
+      카톡 플친을 해두면,<br>
+      정식 출시 전 아래 혜택을 가장 먼저 알려드릴게요!
+    </p>
+
+    <ul class="benefit-list">
+      <li>🏷️ 얼리버드 30% 할인 혜택</li>
+      <li>🔔 선착순 100명 평생 5% 할인 혜택</li>
+      <li>✏️ 베타 테스터 참여 기회</li>
+    </ul>
+
+    <a href="https://pf.kakao.com/_hFbxhX" target="_blank" rel="noopener noreferrer" style="text-decoration:none; display:block; margin-top:28px;">
+      <div style="background:#F9E000; border-radius:10px; padding:18px 24px; text-align:center; transition:opacity 0.2s;" onmouseover="this.style.opacity=0.85" onmouseout="this.style.opacity=1">
+        <span style="font-size:20px;">💬</span>
+        <span style="font-family:'Noto Sans KR',sans-serif; font-size:15px; font-weight:700; color:#3A1D1D; margin-left:8px;">카카오 채널 플친하기</span>
+      </div>
+    </a>
+  </div>
+
+</div>
+
+</div><!-- /page-bg -->
+<footer>
+  <div style="font-family:'DM Sans',sans-serif; font-size:14px; letter-spacing:0.3em; color:#888; margin-bottom:8px;">RITUALRIX</div>
+  <div>© 2026 브랜드카인드 BrandKind · Clean Energy & Focus Care</div>
+</footer>
+
+</body>
+</html>
