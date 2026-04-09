@@ -22,6 +22,7 @@
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
+  p, li, h1, h2, h3 { word-break: keep-all; }
 
   html { scroll-behavior: smooth; }
 
@@ -152,10 +153,10 @@
     background: #F9E000;
     color: #1c1c1a;
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 700;
     letter-spacing: 0.05em;
-    padding: 16px 32px;
+    padding: 18px 36px;
     border-radius: 100px;
     cursor: pointer;
     transition: background 0.25s, transform 0.2s, box-shadow 0.2s;
@@ -186,7 +187,7 @@
   .page-wrap {
     max-width: 760px;
     margin: 0 auto;
-    padding: 0 28px;
+    padding: 0 24px;
   }
 
   /* ──── TITLE SECTION ──── */
@@ -219,7 +220,7 @@
 
   .subtitle-block p {
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 400;
     color: #4a4540;
     line-height: 1.8;
@@ -228,14 +229,15 @@
   }
 
   .subtitle-italic {
-    font-family: 'Cormorant', 'DM Sans', serif;
-    font-style: italic;
-    color: #2d6050;
-    font-size: 20px;
-    font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    color: #5BB8D4;
+    font-size: 18px;
+    font-weight: 700;
     display: block;
-    margin-top: 10px;
-    letter-spacing: 0.06em;
+    margin-top: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
   }
 
   .cta-banner {
@@ -272,21 +274,22 @@
   }
 
   .highlight-box p {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 1.8;
     color: var(--text-dark);
   }
 
   .body-text {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.85;
     color: var(--text-mid);
     margin-bottom: 14px;
+    word-break: keep-all;
   }
 
   .emphasis-text {
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 700;
     color: var(--text-dark);
     margin-bottom: 16px;
@@ -299,7 +302,7 @@
   }
 
   .ingredient-list li {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.9;
     color: var(--text-mid);
     padding: 2px 0;
@@ -315,7 +318,7 @@
 
   .section-header-box h2 {
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 700;
     color: #1c1c1a;
     margin-bottom: 4px;
@@ -323,14 +326,14 @@
   }
 
   .section-header-box p {
-    font-size: 13px;
+    font-size: 15px;
     color: var(--text-mid);
   }
 
   /* ──── RECIPE SECTION ──── */
   .section-title {
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 18px;
+    font-size: 21px;
     font-weight: 700;
     color: #1c1c1a;
     margin-bottom: 24px;
@@ -354,7 +357,7 @@
   }
 
   .recipe-label {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 700;
     margin-bottom: 8px;
   }
@@ -370,7 +373,7 @@
   }
 
   .recipe-note {
-    font-size: 12px;
+    font-size: 14px;
     color: var(--text-light);
     line-height: 1.8;
   }
@@ -496,7 +499,7 @@
   }
 
   .no-list li {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 2;
     color: var(--text-dark);
@@ -529,7 +532,7 @@
 
   .when-card ul {
     list-style: none;
-    font-size: 13px;
+    font-size: 15px;
     color: var(--text-mid);
     line-height: 2;
   }
@@ -554,7 +557,7 @@
 
   /* ──── TARGET SECTION ──── */
   .target-sub {
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 700;
     margin-bottom: 14px;
     color: var(--text-dark);
@@ -566,7 +569,7 @@
   }
 
   .target-list li {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 2;
     color: var(--text-mid);
   }
@@ -700,7 +703,7 @@
   }
 
   .pricing-detail {
-    font-size: 16px;
+    font-size: 19px;
     font-weight: 700;
     color: #3a8fcc;
     margin-bottom: 6px;
@@ -760,7 +763,7 @@
   }
 
   .benefit-list li {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 2;
     color: var(--text-mid);
   }
@@ -787,6 +790,215 @@
     color: var(--text-light);
     letter-spacing: 0.05em;
   }
+
+  /* ──── NOOTROPIC BANNER ──── */
+  .nootropic-banner {
+    background: #B3EBF2;
+    border-radius: 16px;
+    padding: 28px 24px;
+    margin: 28px 0;
+    color: #1c1c1a;
+    border: 1px solid #9adde6;
+  }
+  .nootropic-tag {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #1a6a78;
+    margin-bottom: 12px;
+  }
+  .nootropic-title {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #1c1c1a;
+    margin-bottom: 14px;
+    letter-spacing: -0.02em;
+  }
+  .nootropic-desc {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.85;
+    color: #2a4a52;
+    margin-bottom: 18px;
+    word-break: keep-all;
+  }
+  .nootropic-desc strong { color: #0e5a6a; font-weight: 700; }
+  .nootropic-pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .nootropic-pill {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: #1a5a68;
+    border: 1px solid rgba(26,90,104,0.3);
+    border-radius: 100px;
+    padding: 5px 14px;
+    background: rgba(255,255,255,0.45);
+  }
+
+  /* ──── INGREDIENT CARDS ──── */
+  .ingredient-card {
+    background: #fff;
+    border: 1px solid #e8e4df;
+    border-radius: 16px;
+    padding: 28px 24px;
+    margin-bottom: 20px;
+  }
+  .ingredient-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .ingredient-icon-wrap {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+  }
+  .ingredient-icon-wrap.brain { background: #eaf4fb; }
+  .ingredient-icon-wrap.cell  { background: #fff3e0; }
+  .ingredient-icon-wrap.vita  { background: #e8f5e9; }
+  .ingredient-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #9a9490;
+    margin-bottom: 4px;
+  }
+  .ingredient-name {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1c1c1a;
+    letter-spacing: -0.02em;
+  }
+  .ingredient-hero-text {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: #3a6858;
+    letter-spacing: 0.05em;
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #f0ece6;
+  }
+  .ingredient-body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.85;
+    color: #4a4540;
+    margin-bottom: 14px;
+    word-break: keep-all;
+  }
+  .ingredient-body strong { color: #1c1c1a; font-weight: 700; }
+
+  /* Science box */
+  .ingredient-science-box {
+    background: #f7f5f2;
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin-bottom: 16px;
+  }
+  .science-row {
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+    color: #6a6460;
+    line-height: 1.7;
+    margin-bottom: 8px;
+  }
+  .science-row:last-child { margin-bottom: 0; }
+  .science-icon { flex-shrink: 0; }
+  .science-row em { color: #9a9490; font-style: italic; }
+
+  /* Cell energy flow */
+  .cell-energy-flow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #fffbf0;
+    border: 1px solid #f0e8c8;
+    border-radius: 12px;
+    padding: 18px 16px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+  .flow-step {
+    flex: 1;
+    min-width: 80px;
+    text-align: center;
+  }
+  .flow-icon { font-size: 24px; margin-bottom: 6px; }
+  .flow-text {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #4a4540;
+  }
+  .flow-text strong { color: #1c1c1a; font-size: 13px; display: block; }
+  .flow-arrow {
+    font-size: 20px;
+    color: #c8b870;
+    font-weight: 300;
+    flex-shrink: 0;
+  }
+
+  /* Vitamin grid */
+  .vitamin-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .vitamin-item {
+    background: #f7f5f2;
+    border-radius: 10px;
+    padding: 14px 16px;
+  }
+  .vitamin-name {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #1c1c1a;
+    margin-bottom: 6px;
+  }
+  .vitamin-desc {
+    font-size: 12px;
+    line-height: 1.65;
+    color: #6a6460;
+  }
+
+  /* Tags */
+  .ingredient-tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 4px;
+  }
+  .itag {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: #3a6858;
+    background: #e8f4f0;
+    border: 1px solid #c4dfd8;
+    border-radius: 100px;
+    padding: 4px 12px;
+  }
+
 </style>
 
 <!-- Facebook Pixel Code -->
@@ -814,7 +1026,7 @@ src="https://www.facebook.com/tr?id=2065356230696722&ev=PageView&noscript=1"/></
     <div class="logo-wordmark">RITUALRIX</div>
     <div class="logo-tagline">Clean Energy &amp; Focus Care</div>
     <div class="hero-divider"></div>
-    <p class="hero-subline">크리스탈처럼 맑은 집중력을 위한<br>데일리 웰니스 워터믹스</p>
+    <p class="hero-subline">크리스탈처럼 맑은 집중력을 위한 데일리 웰니스 워터믹스</p>
     <div class="hero-badges">
       <span class="hero-badge">No Caffeine</span>
       <span class="hero-badge">No Sugar</span>
@@ -846,35 +1058,145 @@ src="https://www.facebook.com/tr?id=2065356230696722&ev=PageView&noscript=1"/></
     <h1 class="main-title">두근거림 없는 무카페인<br>'클린 에너지 드링크'</h1>
 
     <div class="subtitle-block">
-      <p>크리스탈처럼 맑은 집중력을 위한 웰니스 루틴</p>
-      <span class="subtitle-italic">RITUALRIX Clean Energy Drink</span>
+      <p>몰입의 순간 스마트한 웰니스 루틴</p>
+      <span class="subtitle-italic">RITUALRIX CLEAN ENERGY DRINK</span>
     </div>
   </div>
 
   <!-- PROBLEM SECTION -->
   <div class="highlight-box">
-    <p>매일 아침 피곤한 몸을 깨우기 위해<br><br>커피 없으면 시작 못 하는 하루.</p>
+    <p>매일 아침 피곤한 몸을 깨우기 위해,<br>커피 없으면 시작 못 하는 하루.</p>
   </div>
 
   <p class="body-text">오늘도 고카페인 에너지 드링크나, 커피를 들이키고 있나요?</p>
 
   <p class="body-text">
-    습관처럼 마시지만, 카페인은 에너지를 만들어준 않아요.<br>
-    카페인은 '피곤하다'는 뇌의 신호를 잠시 차단하는 방식으로 각성 상태를 만들어요.<br>
-    2~3시간 뒤 그 효과가 끝나면, 에너지는 더 떨어지고 커피를 또 찾게 됩니다. 카페인 스파이크!
+    습관처럼 마시지만, 카페인은 에너지를 만들어주지 않아요. 카페인은 '피곤하다'는 뇌의 신호를 잠시 차단하는 방식으로 각성 상태를 만들어요. 2~3시간 뒤 그 효과가 끝나면, 에너지는 더 떨어지고 커피를 또 찾게 됩니다. 카페인 스파이크!
   </p>
 
   <p class="emphasis-text">잠시 에너지를 끌어다 쓰고 떨어지면 더 피곤해지는 악순환이에요. 해결책이 아니죠.</p>
 
   <p class="body-text">RITUALRIX는 카페인 없이, 세 가지 경로로 에너지를 만듭니다.</p>
 
-  <ul class="ingredient-list">
-    <li>🌿 <strong>브레인 영양</strong> — L-테아닌이 알파파 웨이브를 유도해 머리를 맑게 켭니다</li>
-    <li>⚡ <strong>세포 에너지</strong> — CoQ10·L-카르니틴이 미토콘드리아에서 세포단위로 에너지를 만들어요</li>
-    <li>🌱 <strong>활성화 비타민</strong> — 비타민 B·C군이 신경전달물질이 제대로 작동하게 돕습니다</li>
-  </ul>
+  <!-- NOOTROPIC TREND INTRO -->
+  <div class="nootropic-banner">
+    <div class="nootropic-tag">🇺🇸 Global Nootropic Trend</div>
+    <h3 class="nootropic-title">실리콘밸리·아이비리그가 선택한 웰니스 드링크</h3>
+    <p class="nootropic-desc">카페인 없이 뇌 퍼포먼스를 끌어올리는 <strong>누트로픽(Nootropic)</strong> — 인지기능 향상 성분 트렌드가 미국에서 빠르게 확산되고 있어요. Google, Meta 엔지니어들과 하버드·MIT 학생들이 커피 대신 찾는 클린 에너지의 비밀, RITUALRIX가 그 공식을 담았습니다.</p>
+    <div class="nootropic-pills">
+      <span class="nootropic-pill">Silicon Valley Pick</span>
+      <span class="nootropic-pill">Ivy League Favorite</span>
+      <span class="nootropic-pill">Caffeine-Free 에너지</span>
+    </div>
+  </div>
 
-  <p class="body-text">카페인처럼 빌려 쓰는 게 아니라, 세포부터 차오르고 뇌를 맑게 활성화 시키는 방법으로요</p>
+  <!-- INGREDIENT 1: 브레인 영양 -->
+  <div class="ingredient-card">
+    <div class="ingredient-header">
+      <div class="ingredient-icon-wrap brain">🧠</div>
+      <div>
+        <div class="ingredient-label">Layer 2 · Brain Nutrition</div>
+        <h3 class="ingredient-name">브레인 영양</h3>
+      </div>
+    </div>
+    <div class="ingredient-hero-text">L-테아닌 + 마그네슘</div>
+    <p class="ingredient-body">녹차에서 추출한 <strong>L-테아닌</strong>은 뇌의 알파파(α-wave)를 증가시켜 '각성된 이완' 상태를 만들어요. 긴장은 줄이고 집중력은 높이는 — 마치 명상 직후 같은 맑은 머리 상태를 음료 한 잔으로 경험할 수 있어요.</p>
+    <p class="ingredient-body"><strong>마그네슘</strong>은 300가지 이상의 신경·효소 반응에 관여하는 필수 미네랄이에요. 스트레스와 피로로 가장 먼저 고갈되는 성분으로, 부족하면 집중력 저하·수면 장애·근육 긴장으로 이어집니다.</p>
+    <div class="ingredient-science-box">
+      <div class="science-row">
+        <span class="science-icon">🔬</span>
+        <span>L-테아닌은 카페인과 달리 부작용 없이 알파파를 유도 — <em>Journal of Functional Foods, 2019</em></span>
+      </div>
+      <div class="science-row">
+        <span class="science-icon">⚡</span>
+        <span>스트레스 상황에서 마그네슘 보충 시 코르티솔 수치 유의미하게 감소</span>
+      </div>
+    </div>
+    <div class="ingredient-tag-row">
+      <span class="itag">집중력 향상</span>
+      <span class="itag">불안감 완화</span>
+      <span class="itag">수면 질 개선</span>
+      <span class="itag">뇌 피로 회복</span>
+    </div>
+  </div>
+
+  <!-- INGREDIENT 2: 세포 에너지 -->
+  <div class="ingredient-card">
+    <div class="ingredient-header">
+      <div class="ingredient-icon-wrap cell">⚡</div>
+      <div>
+        <div class="ingredient-label">Layer 1 · Cellular Energy</div>
+        <h3 class="ingredient-name">세포 에너지</h3>
+      </div>
+    </div>
+    <div class="ingredient-hero-text">CoQ10 + L-카르니틴</div>
+    <p class="ingredient-body">카페인은 피곤함을 '느끼지 못하게' 막는 거예요. RITUALRIX는 달라요 — 세포 속 미토콘드리아에서 <strong>실제 에너지(ATP)</strong>를 직접 생성합니다.</p>
+
+    <div class="cell-energy-flow">
+      <div class="flow-step">
+        <div class="flow-icon">🥩</div>
+        <div class="flow-text"><strong>L-카르니틴</strong><br>지방산을 미토콘드리아 안으로 운반</div>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">
+        <div class="flow-icon">🔋</div>
+        <div class="flow-text"><strong>CoQ10</strong><br>전자전달계에서 ATP 에너지 생산 촉진</div>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">
+        <div class="flow-icon">✨</div>
+        <div class="flow-text"><strong>클린 에너지</strong><br>두근거림·스파이크 없는 지속 에너지</div>
+      </div>
+    </div>
+
+    <p class="ingredient-body">이 과정은 카페인처럼 '빌려 쓰는' 게 아니라 세포가 스스로 만드는 에너지예요. 오후 3시 슬럼프도, 퇴근 후 피로도 근본부터 다르게 접근합니다.</p>
+    <div class="ingredient-tag-row">
+      <span class="itag">지속성 에너지</span>
+      <span class="itag">두근거림 없음</span>
+      <span class="itag">체지방 연소 보조</span>
+      <span class="itag">심장 건강</span>
+    </div>
+  </div>
+
+  <!-- INGREDIENT 3: 활성화 비타민 -->
+  <div class="ingredient-card">
+    <div class="ingredient-header">
+      <div class="ingredient-icon-wrap vita">🌱</div>
+      <div>
+        <div class="ingredient-label">Layer 3 · Activation Vitamins</div>
+        <h3 class="ingredient-name">활성화 비타민</h3>
+      </div>
+    </div>
+    <div class="ingredient-hero-text">비타민 B5 · B6 · B12 · C</div>
+    <p class="ingredient-body">에너지와 집중력은 성분 하나로 만들어지지 않아요. 신경전달물질이 제대로 작동하려면 <strong>비타민 B군이 코엔자임(보조효소)</strong>으로 작용해야 해요. 없으면 아무리 좋은 성분도 작동하지 않아요.</p>
+
+    <div class="vitamin-grid">
+      <div class="vitamin-item">
+        <div class="vitamin-name">B5 판토텐산</div>
+        <div class="vitamin-desc">부신 기능 지원, 스트레스 호르몬 조절, 에너지 대사의 핵심 코엔자임</div>
+      </div>
+      <div class="vitamin-item">
+        <div class="vitamin-name">B6 피리독신</div>
+        <div class="vitamin-desc">세로토닌·도파민 합성 보조 — 기분과 동기 부여에 직접 관여</div>
+      </div>
+      <div class="vitamin-item">
+        <div class="vitamin-name">B12 코발라민</div>
+        <div class="vitamin-desc">신경 수초 유지, 적혈구 생성 → 뇌·신경계 정상 작동의 필수 요소</div>
+      </div>
+      <div class="vitamin-item">
+        <div class="vitamin-name">비타민 C</div>
+        <div class="vitamin-desc">항산화 방어, 코르티솔(스트레스 호르몬) 억제, 면역 시너지</div>
+      </div>
+    </div>
+    <div class="ingredient-tag-row">
+      <span class="itag">신경전달 최적화</span>
+      <span class="itag">스트레스 완화</span>
+      <span class="itag">기분 안정</span>
+      <span class="itag">면역 강화</span>
+    </div>
+  </div>
+
+  <p class="body-text" style="text-align:center; color:#3a6858; font-weight:600; font-size:17px; padding: 8px 0 4px;">카페인처럼 빌려 쓰는 게 아니라,<br>세포부터 차오르고 뇌를 맑게 활성화시키는 방법으로요 ✨</p>
 
   <div class="section-divider"></div>
 
@@ -916,9 +1238,9 @@ src="https://www.facebook.com/tr?id=2065356230696722&ev=PageView&noscript=1"/></
   <!-- 2. LAYER SECTION -->
   <h2 class="section-title" style="margin-top:40px">2. 카페인 없이, 맑은 머리가 필요한 순간 강력한 클린 에너지 3 Layer</h2>
 
-  <p class="body-text">카페인 없이도 강력한 클린에너지 포뮬라로<br>흐트러지지 않고 또렷하게 이어지는 상태를 만들어 줍니다.</p>
+  <p class="body-text">카페인 없이도 강력한 클린에너지 포뮬라로 흐트러지지 않고 또렷하게 이어지는 상태를 만들어 줍니다.</p>
 
-  <p class="body-text" style="color:#3a82c4; font-weight:500;">에너지를 만들고, 집중은 또렷해지고, 컨디션까지 안정되는 3 Layer 구조로<br>하루 내내 가볍고 또렷한 컨디션을 경험해 보세요!</p>
+  <p class="body-text" style="color:#3a82c4; font-weight:500;">에너지를 만들고, 집중은 또렷해지고, 컨디션까지 안정되는 3 Layer 구조로 하루 내내 가볍고 또렷한 컨디션을 경험해 보세요!</p>
 
   <!-- 3 Layer Cards -->
   <div style="margin:24px 0;border-radius:12px;overflow:hidden;border:1px solid #e8e4df;">
@@ -930,7 +1252,7 @@ src="https://www.facebook.com/tr?id=2065356230696722&ev=PageView&noscript=1"/></
   <!-- 3. CLEAN / NO SECTION -->
   <h2 class="section-title">3. 합성이 아닌, 천연 원료 100%로 완성한 클린한 맛</h2>
 
-  <p class="body-text">한 잔 가득, 자연으로 채운 클린 레시피로 인공적인 맛이 아닌<br>100% 천연 재료만을 사용해 제조합니다.</p>
+  <p class="body-text">한 잔 가득, 자연으로 채운 클린 레시피로 인공적인 맛이 아닌 100% 천연 재료만을 사용해 제조합니다.</p>
 
   <ul class="no-list">
     <li>No Sugar</li>
@@ -939,7 +1261,7 @@ src="https://www.facebook.com/tr?id=2065356230696722&ev=PageView&noscript=1"/></
     <li>No 합성첨가물</li>
   </ul>
 
-  <p class="body-text">액상과당, 색소, 보존료, 유화제 등 불필요한 성분은 모두 배제했죠.<br>부담없이, 매일 아침, 점심, 저녁 클린하게 채우는 에너지 루틴!</p>
+  <p class="body-text">액상과당, 색소, 보존료, 유화제 등 불필요한 성분은 모두 배제했죠. 부담없이, 매일 아침, 점심, 저녁 클린하게 채우는 에너지 루틴!</p>
 
   <div class="section-divider"></div>
 
@@ -1032,16 +1354,14 @@ src="https://www.facebook.com/tr?id=2065356230696722&ev=PageView&noscript=1"/></
 
   <!-- KAKAO FINAL -->
   <div class="kakao-final">
-    <h2>카톡 플친을 해두면<br>제일 먼저 얼리버드 할인을 알려 드릴게요 🙂 🎁</h2>
+    <h2>카톡 플친을 해두면 제일 먼저 얼리버드 할인을 알려 드릴게요 🙂 🎁</h2>
 
     <p class="body-text">
-      리추얼릭스 클린에너지 워터믹스는 곧 출시 예정인 제품이예요.<br>
-      안심하고 맛있게 스트레스 관리를 할 수 있도록 마지막 디테일을 점검하고 있습니다.
+      리추얼릭스 클린에너지 워터믹스는 곧 출시 예정인 제품이예요. 안심하고 맛있게 스트레스 관리를 할 수 있도록 마지막 디테일을 점검하고 있습니다.
     </p>
 
     <p class="body-text">
-      카톡 플친을 해두면,<br>
-      정식 출시 전 아래 혜택을 가장 먼저 알려드릴게요!
+      카톡 플친을 해두면, 정식 출시 전 아래 혜택을 가장 먼저 알려드릴게요!
     </p>
 
     <ul class="benefit-list">
