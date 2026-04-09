@@ -788,6 +788,20 @@
     letter-spacing: 0.05em;
   }
 </style>
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2065356230696722');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2065356230696722&ev=PageView&noscript=1"/></noscript>
+<!-- End Facebook Pixel Code -->
 </head>
 <body>
 
@@ -807,7 +821,7 @@
       <span class="hero-badge">100% Natural</span>
       <span class="hero-badge">3-Layer Formula</span>
     </div>
-    <a href="https://pf.kakao.com/_hFbxhX" target="_blank" rel="noopener noreferrer" class="hero-cta-link">
+    <a href="https://pf.kakao.com/_hFbxhX" target="_blank" rel="noopener noreferrer" class="hero-cta-link" onclick="fbq('track', 'Lead', {content_name: 'hero_cta'});">
       <div class="hero-cta-btn">
         <span class="cta-icon">💬</span>
         <span>카카오톡 플친하고 얼리버드 혜택 받기</span>
@@ -1010,7 +1024,7 @@
   </div>
 
   <!-- KAKAO CTA -->
-  <a href="https://pf.kakao.com/_hFbxhX" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">
+  <a href="https://pf.kakao.com/_hFbxhX" target="_blank" rel="noopener noreferrer" style="text-decoration:none;" onclick="fbq('track', 'Lead', {content_name: 'mid_cta'});">
     <div class="kakao-cta">
       <p>👊 3초 카톡 플친하고 역대급 혜택 알림받기(클릭!)</p>
     </div>
@@ -1036,7 +1050,7 @@
       <li>✏️ 베타 테스터 참여 기회</li>
     </ul>
 
-    <a href="https://pf.kakao.com/_hFbxhX" target="_blank" rel="noopener noreferrer" style="text-decoration:none; display:block; margin-top:28px;">
+    <a href="https://pf.kakao.com/_hFbxhX" target="_blank" rel="noopener noreferrer" style="text-decoration:none; display:block; margin-top:28px;" onclick="fbq('track', 'Lead', {content_name: 'bottom_cta'});">
       <div style="background:#F9E000; border-radius:10px; padding:18px 24px; text-align:center; transition:opacity 0.2s;" onmouseover="this.style.opacity=0.85" onmouseout="this.style.opacity=1">
         <span style="font-size:20px;">💬</span>
         <span style="font-family:'Noto Sans KR',sans-serif; font-size:15px; font-weight:700; color:#3A1D1D; margin-left:8px;">카카오 채널 플친하기</span>
@@ -1052,5 +1066,36 @@
   <div>© 2026 브랜드카인드 BrandKind · Clean Energy & Focus Care</div>
 </footer>
 
+
+<!-- UTM Capture & Pixel Content Tracking -->
+<script>
+(function() {
+  var params = new URLSearchParams(window.location.search);
+  var utmContent = params.get('utm_content') || 'direct';
+  var utmCampaign = params.get('utm_campaign') || '';
+  var utmSource = params.get('utm_source') || '';
+
+  // Store utm info
+  window._utmContent = utmContent;
+
+  // Send ViewContent event with utm info (소재별 구분)
+  fbq('track', 'ViewContent', {
+    content_name: utmContent,
+    content_category: utmCampaign
+  });
+
+  // Override Lead tracking to include utm_content
+  document.addEventListener('click', function(e) {
+    var link = e.target.closest('a[href*="pf.kakao.com"]');
+    if (link) {
+      fbq('track', 'Lead', {
+        content_name: utmContent,
+        content_category: 'kakao_plus_friend'
+      });
+    }
+  });
+})();
+</script>
+<!-- End UTM Capture -->
 </body>
 </html>
