@@ -1486,5 +1486,23 @@ src="https://www.facebook.com/tr?id=2065356230696722&ev=PageView&noscript=1"/></
 })();
 </script>
 <!-- End UTM Capture -->
+
+<!-- GA4 Kakao Click Event -->
+<script>
+document.addEventListener('click', function(e) {
+  var link = e.target.closest('a[href*="pf.kakao.com"]');
+  if (link) {
+    var position = link.querySelector('.kakao-cta') ? 'mid_cta'
+                 : link.closest('.kakao-final') ? 'bottom_cta'
+                 : 'floating_cta';
+    gtag('event', 'kakao_click', {
+      'button_position': position,
+      'utm_source': new URLSearchParams(window.location.search).get('utm_source') || 'direct',
+      'utm_campaign': new URLSearchParams(window.location.search).get('utm_campaign') || ''
+    });
+  }
+});
+</script>
+<!-- End GA4 Kakao Click Event -->
 </body>
 </html>
